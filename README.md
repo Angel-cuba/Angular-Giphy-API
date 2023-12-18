@@ -1,4 +1,4 @@
-# AngGiphy
+# Angular and [Giphy API](https://developers.giphy.com/explorer/).
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.6.
 
