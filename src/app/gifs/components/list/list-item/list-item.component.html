@@ -1,0 +1,10 @@
+@if (gif) {
+  <div class="card">
+    <h2 mat-card-header>{{gif.user?.display_name}}</h2>
+    <img mat-card-md-image class="card-img-top" [src]="gif.images.downsized.url" [alt]="gif.title">
+    <div class="card-body" >
+      <h5 class="card-title">{{ gif.title }}</h5>
+      <p class="card-text">{{ gif.username }}</p>
+    </div>
+  </div>
+}
