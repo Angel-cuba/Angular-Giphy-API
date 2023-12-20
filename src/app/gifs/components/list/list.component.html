@@ -1,5 +1,5 @@
 <div class="container">
-  @for (gif of gifService.gifs(); track gif.id) {
-    <app-list-item [gif]="gif"/>
-  }
+@for (gif of gifService.gifs(); track $index) {
+  <app-list-item [gif]="gif"></app-list-item>
+}
 </div>

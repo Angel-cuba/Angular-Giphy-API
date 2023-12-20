@@ -1,0 +1,30 @@
+.search {
+  width: 50%;
+  margin: 0 auto;display: flex;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  flex-direction: column;
+  &:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  }
+  input {
+    width: 70%;
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin: 1rem auto;
+    &:focus {
+      box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+}

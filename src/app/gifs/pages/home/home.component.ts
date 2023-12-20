@@ -12,4 +12,12 @@ import { SearchComponent } from '../../components/search/search.component';
 })
 export class HomeComponent {
 
+constructor() {}
+
+newValue: string = '';
+
+handleNewValue(value: string) {
+  this.newValue = value;
+}
+
 }

@@ -1,8 +1,8 @@
 <section>
   <div class="">
-    <app-search></app-search>
+    <app-search (searchValue)="handleNewValue($event)"></app-search>
   </div>
   <div class="">
-    <app-list></app-list>
+    <app-list [value]="newValue"></app-list>
   </div>
 </section>
