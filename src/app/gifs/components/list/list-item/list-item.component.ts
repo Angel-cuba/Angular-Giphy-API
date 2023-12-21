@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { Datum } from '../../../interfaces/gif.interface';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-list-item',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   templateUrl: './list-item.component.html',
   styleUrl: './list-item.component.scss'
 })
