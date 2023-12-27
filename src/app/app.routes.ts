@@ -14,6 +14,14 @@ export const routes: Routes = [
       ),
   },
   {
+    path: 'details',
+    loadComponent: () =>
+      import('./gifs/components/details/details.component').then(
+        (m) => m.DetailsComponent
+      ),
+  },
+
+  {
     path: '',
     redirectTo: '/home',
     pathMatch: 'full',

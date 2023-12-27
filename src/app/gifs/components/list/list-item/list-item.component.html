@@ -1,7 +1,8 @@
 @if (gif) {
 <div class="card">
   <h2 mat-card-header>{{gif.user?.display_name}}</h2>
-  <a [routerLink]="['/details', gif.id]" [routerLinkActive]=[]>
+  <a (click)="navigateToDetails(gif.id)"> 
+
   <img class="card-img-top" src="{{ gif.images.downsized.url }}" alt="{{ gif.title }}">
    </a>
  

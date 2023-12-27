@@ -1,1 +1,10 @@
-<p>details works!</p>
+@if (service.gif()) {
+  <div class="card">
+    <h2 mat-card-header>{{service.gif().user?.display_name}}</h2>
+    <img class="card-img-top" src="{{ service.gif().images?.downsized.url }}" alt="{{ service.gif().title }}">
+    <div class="card-body">
+      <h5 class="card-title">{{ service.gif().title }}</h5>
+      <p class="card-text">{{ service.gif().username }}</p>
+    </div>
+  </div>
+}

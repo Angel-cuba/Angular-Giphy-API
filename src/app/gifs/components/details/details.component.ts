@@ -1,21 +1,15 @@
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { GifService } from '../../services/gif.service';
 
 @Component({
   selector: 'app-details',
   standalone: true,
   imports: [],
   templateUrl: './details.component.html',
-  styleUrl: './details.component.scss'
+  styleUrl: './details.component.scss',
 })
 export class DetailsComponent {
+  public service = inject(GifService);
 
-  public route = inject(ActivatedRoute)
-  
-    constructor() {
-      this.route.params.subscribe((params) => {
-        const id = params['id'];
-        console.log(id);
-      })
-    }
+  constructor() {}
 }
